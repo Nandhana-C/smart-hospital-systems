@@ -6,7 +6,7 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay, EffectCards } from "swiper";
-import img1 from '../assets/home.svg';
+import img1 from '../../assets/home.svg';
 
 
 
@@ -58,6 +58,10 @@ const Container = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        img{
+            width:100%;
+            height: 100%;
+        }
     }
     .swiper-button-next{
         color:${props => props.theme.text};

@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import TypeWriterText from '../TypeWriterText';
-import HomeImg from '../../assets/home.svg';
+import HomeImg from '../../../assets/home.svg';
 
 
 function Home() {

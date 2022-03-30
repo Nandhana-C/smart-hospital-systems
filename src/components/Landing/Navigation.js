@@ -12,10 +12,9 @@ function Navigation() {
           <MenuItem>Home</MenuItem>
           <MenuItem>About</MenuItem>
           <MenuItem>Services</MenuItem>
-          <MenuItem>Map</MenuItem>
           <MenuItem>Faq</MenuItem>
         </Menu>
-        <Button text="Start Now" link="https://google.com" />
+        <Button text="Start Now" link="#" />
       </NavBar>
     </Section>
   )

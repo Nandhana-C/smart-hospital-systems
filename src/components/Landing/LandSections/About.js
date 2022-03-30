@@ -2,7 +2,7 @@ import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
 import Carousel from '../Carousel';
 import Button from '../Button';
-import {dark} from '../../Styles/Themes';
+import {dark} from '../../../Styles/Themes';
 
 function About() {
   return (

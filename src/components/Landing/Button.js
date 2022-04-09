@@ -1,13 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 function Button({text, link}) {
   return (
+    <Link to='/signup'>
     <Btn>
+        
+
         <a href={link} aria-label={text} target="_blank" rel="noreferrer" >
             {text}
         </a>
     </Btn>
+    </Link>
   )
 }
 

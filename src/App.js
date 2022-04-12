@@ -30,17 +30,19 @@ function App() {
           <Home signOut={signOut} user={user} />
         } */}
       
-      <Routes>
+      {/* <Routes>
         <Route path='/' element={<Landing />}/>
         <Route path='/login' element={<LogIn />}/>
-        <Route path='/signup' element={<SignUp />}/>
+        <Route path='/signup' element={<SignUp setUser/>}/>
         <Route path='/verify' element={<PhnOtp />}/>
         <Route path='/userform' element={<UserForm />}/>
         <Route path='/HospRegister' element={<HospSignup />}/>
         <Route path='/HospLogin' element={<HospSignIn />}/>
         <Route path='/Hospital' element={<HospDash />}/>
         <Route path='/dashboard' element={<PaitentDash />}/>
-      </Routes>
+      </Routes> */}
+
+      <HospDash />
     </div>
   );
 }

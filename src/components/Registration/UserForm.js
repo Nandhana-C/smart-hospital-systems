@@ -1,33 +1,61 @@
-import React from 'react';
-import TextField from '@material-ui/core/TextField';
-import Button from '@material-ui/core/Button';
+import React, {useState} from 'react';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import TextField from '@material-ui/core/TextField';
 import RadioGroup from '@mui/material/RadioGroup';
 import Radio from '@mui/material/Radio';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormLabel from '@material-ui/core/FormLabel';
 import Stack from '@mui/material/Stack';
-// import Box from '@mui/material/Box';
+import Button from '@material-ui/core/Button';
+// import { Label } from '@material-ui/icons';
 
 function UserForm() {
-    const paperStyle = { padding: 20, height: 'full', width: 600, margin: '20px auto', borderRadius: '50px' };
-    const btnStyle = { backgroundColor: '#023047', color: 'white', margin: '10px auto', width: 600 };
-    const headStyle = {fontFamily: 'Roboto Condensed', color:'#'};
-    const radioBtn = {margin:'auto'};
-    const { values, handleChange } = this.props;
+    const [firstName, setFirstName] = useState("");
+    const [lastName, setLastName] = useState("");
+    const [emailAddress, setEmailAddress] = useState("");
+    const [mobileNumber, setMobileNumber] = useState("");
+    const [address, setAddress] = useState("");
+    const [gender, setGender] = useState("");
+    const [dob, setDob] = useState("");
+    const [age, setAge] = useState("");
+    const [height, setHeight] = useState("");
+    const [weight, setWeight] = useState("");
+    const [maritalStatus, setMaritalStatus] = useState("");
+    const [prevMed, setPrevMed] = useState("");
+    const [ifAny, setIfAny] = useState("");
+    const [bloodGroup, setBloodGroup] = useState("");
+    const [allergies, setAllergies] = useState("");
+    const [ifanyl, setifanyl] = useState("");
+    const [currentMed, setCurrentMed] = useState("");
+    const [attenderName, setAttenderName] = useState("");
+    const [attenderAge, setAttenderAge] = useState("");
+    const [attenderContact, setAttenderContact] = useState("");
+    const [others, setOthers] = useState("");
+  
+  
+    const onSubmit = (event) =>{
+      event.preventDefault();
+      console.log(UserForm);
+    };
+    const paperStyle = { padding: 20, height: 'full', width: 600, margin: '20px auto', borderRadius: '20px',flexDirection: 'column' }
+    const btnStyle = { backgroundColor: '#023047', color: 'white', margin: '10px auto', width: 600 }
+    const headStyle = {fontFamily: 'Roboto Condensed', color:'#'}
+    const radioBtn = {marginTop: '10px', marginBottom:'2px', padding:0, display:'flex', flexDirection: 'row'}
+    const algBtn = {marginBottom: '2px',marginTop:'10px',padding:0, display:'flex',}
+    const testBtn = {display: 'flex'}
   return (
+    <form>
     <Grid>
         <Paper elevation={10} style={paperStyle}>
-          <>
             <Grid>
               <h2 style={headStyle}> Fill Your Details</h2>
             </Grid>
             <TextField
               placeholder="Enter Your First Name"
               label="First Name"
-              onChange={handleChange('firstName')}
-              defaultValue={values.firstName}
+              onChange={(event)=>setFirstName(event.target.value)}
+              // defaultValue={values.firstName}
               margin="normal"
               fullWidth
               required
@@ -35,8 +63,8 @@ function UserForm() {
             <TextField
               placeholder="Enter Your Last Name"
               label="Last Name"
-              onChange={handleChange('lastName')}
-              defaultValue={values.lastName}
+              onChange={(event)=>setLastName(event.target.value)}
+              // defaultValue={values.firstName}
               margin="normal"
               fullWidth
               required
@@ -44,8 +72,8 @@ function UserForm() {
             <TextField
               placeholder="Enter Your Email Address"
               label="Email Address"
-              onChange={handleChange('emailAddress')}
-              defaultValue={values.emailAddress}
+              onChange={(event)=>setEmailAddress(event.target.value)}
+              // defaultValue={values.emailAddress}
               margin="normal"
               fullWidth
               required
@@ -53,8 +81,8 @@ function UserForm() {
             <TextField
               placeholder="Enter Your Mobile Number"
               label="Mobile Number"
-              onChange={handleChange('mobileNumber')}
-              defaultValue={values.mobileNumber}
+              onChange={(event)=>setMobileNumber(event.target.value)}
+              // defaultValue={values.mobileNumber}
               margin="normal"
               fullWidth
               required
@@ -62,25 +90,28 @@ function UserForm() {
             <TextField
               placeholder="Enter Your address"
               label="Address"
-              onChange={handleChange('address')}
-              defaultValue={values.address}
+              onChange={(event)=>setAddress(event.target.value)}
+              // defaultValue={values.address}
               margin="normal"
               fullWidth
               required
             />
-            <FormLabel placeholder='gender' fullwidth required style={radioBtn}>Gender</FormLabel>
-            <RadioGroup aria-label="gender" name="gender1" onChange={handleChange('gender')}>
-              <FormControlLabel value="Female" control={<Radio />} label="Female" />
-              <FormControlLabel value="Male" control={<Radio />} label="Male" />
-              <FormControlLabel value="Other" control={<Radio />} label="Other" />
-            </RadioGroup>
+            <div style={testBtn}>
+              <FormLabel placeholder='gender' fullwidth required style={radioBtn}>Gender: </FormLabel>
+              <RadioGroup row aria-label="gender" name="gender1" onChange={(event)=>setGender(event.target.value)}>
+                <FormControlLabel value="Female" control={<Radio />} label="Female" />
+                <FormControlLabel value="Male" control={<Radio />} label="Male" />
+                <FormControlLabel value="Other" control={<Radio />} label="Other" />
+              </RadioGroup>
+            </div>
+
             <Stack component="form" noValidate spacing={3}>
               <TextField
                 label="Date of Birth"
                 type="date"
                 defaultValue="DD-MM-YYYY"
                 margin='normal'
-                onChange={handleChange('dob')}
+                onChange={(event)=>setDob(event.target.value)}
                 fullWidth
                 required
                 sx={{ width: 220 }}
@@ -92,8 +123,8 @@ function UserForm() {
             <TextField
               placeholder="Enter Your Age"
               label="Age"
-              onChange={handleChange('age')}
-              defaultValue={values.age}
+              onChange={(event)=>setAge(event.target.value)}
+              // defaultValue={values.age}
               margin="normal"
               fullWidth
               required
@@ -101,8 +132,8 @@ function UserForm() {
             <TextField
               placeholder="Enter Your Height"
               label="Height"
-              onChange={handleChange('height')}
-              defaultValue={values.height}
+              onChange={(event)=>setHeight(event.target.value)}
+              // defaultValue={values.height}
               margin="normal"
               fullWidth
               required
@@ -110,57 +141,63 @@ function UserForm() {
             <TextField
               placeholder="Enter Your Weight"
               label="Weight"
-              onChange={handleChange('weight')}
-              defaultValue={values.weight}
+              onChange={(event)=>setWeight(event.target.value)}
+              // defaultValue={values.weight}
               margin="normal"
               fullWidth
               required
             />
-            <FormLabel placeholder='Marital Status' fullwidth required>Marital Status</FormLabel>
-            <RadioGroup aria-label="maritalStatus" name="ms" onChange={handleChange('maritalStatus')}>
+            <div style={testBtn}>
+            <FormLabel placeholder='Marital Status' fullwidth required style={radioBtn}>Marital Status</FormLabel>
+            <RadioGroup row aria-label="maritalStatus" name="ms" onChange={(event)=>setMaritalStatus(event.target.value)}>
               <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
               <FormControlLabel value="No" control={<Radio />} label="No" />
             </RadioGroup>
-            <FormLabel placeholder='pm' fullwidth required>Previous Medical History</FormLabel>
-            <RadioGroup aria-label="pm" name="pm1" onChange={handleChange('previousMedical')}>
+            </div>
+            <div style={testBtn}>
+            <FormLabel placeholder='pm' fullwidth required style={radioBtn}>Previous Medical History</FormLabel>
+            <RadioGroup row aria-label="pm" name="pm1" onChange={(event)=>setPrevMed(event.target.value)}>
               <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
               <FormControlLabel value="No" control={<Radio />} label="No" />
             </RadioGroup>
+            </div>
             <TextField
               placeholder="Mention the history"
               label="If any"
-              onChange={handleChange('ifAny')}
-              defaultValue={values.ifAny}
+              onChange={(event)=>setIfAny(event.target.value)}
+              // defaultValue={values.ifAny}
               margin="normal"
               fullWidth
             />
             <TextField
               placeholder="Blood Group"
               label="Blood Group"
-              onChange={handleChange('bloodGroup')}
-              defaultValue={values.bloodGroup}
+              onChange={(event)=>setBloodGroup(event.target.value)}
+              // defaultValue={values.bloodGroup}
               margin="normal"
               fullWidth
               required
             />
-            <FormLabel placeholder='al' fullwidth required>Allergies</FormLabel>
-            <RadioGroup aria-label="al" name="al" onChange={handleChange('allergies')}>
+            <div style={testBtn}>
+            <FormLabel placeholder='al' fullwidth required style={algBtn}>Allergies</FormLabel>
+            <RadioGroup row aria-label="al" name="al" onChange={(event)=>setAllergies(event.target.value)}>
               <FormControlLabel value="Yes" control={<Radio />} label="Yes" />
               <FormControlLabel value="No" control={<Radio />} label="No" />
             </RadioGroup>
+            </div>
             <TextField
               placeholder="If any"
               label="If any"
-              onChange={handleChange('ifAnyl')}
-              defaultValue={values.ifAnyl}
+              onChange={(event)=>setifanyl(event.target.value)}
+              // defaultValue={values.ifAnyl}
               margin="normal"
               fullWidth
             />
             <TextField
               placeholder="Current Medication"
               label="Current Medication"
-              onChange={handleChange('currentMedication')}
-              defaultValue={values.currentMedication}
+              onChange={(event)=>setCurrentMed(event.target.value)}
+              // defaultValue={values.currentMedication}
               margin="normal"
               fullWidth
               required
@@ -168,8 +205,8 @@ function UserForm() {
             <TextField
               placeholder="Attender Name"
               label="Attender Name"
-              onChange={handleChange('attenderName')}
-              defaultValue={values.attenderName}
+              onChange={(event)=>setAttenderName(event.target.value)}
+              // defaultValue={values.attenderName}
               margin="normal"
               fullWidth
               required
@@ -177,8 +214,8 @@ function UserForm() {
             <TextField
               placeholder="Attender Age"
               label="Attender Age"
-              onChange={handleChange('attenderAge')}
-              defaultValue={values.attenderAge}
+              onChange={(event)=>setAttenderAge(event.target.value)}
+              // defaultValue={values.attenderAge}
               margin="normal"
               fullWidth
               required
@@ -186,8 +223,8 @@ function UserForm() {
             <TextField
               placeholder="Attender Contact"
               label="Attender Contact"
-              onChange={handleChange('atenderContact')}
-              defaultValue={values.attenderContact}
+              onChange={(event)=>setAttenderContact(event.target.value)}
+              // defaultValue={values.attenderContact}
               margin="normal"
               fullWidth
               required
@@ -195,22 +232,23 @@ function UserForm() {
             <TextField
               placeholder="Others"
               label="Others"
-              onChange={handleChange('others')}
-              defaultValue={values.others}
+              onChange={(event)=>setOthers(event.target.value)}
+              // defaultValue={values.others}
               margin="normal"
               fullWidth
               required
             />
             <Button
-              color="primary"
+              color="secondary"
               variant="contained"
-              onClick={this.continue}
-              style={btnStyle}
-            >Continue</Button>
-          </>
-        </Paper>
+              onSubmit={onSubmit}
+              style = {btnStyle}
+            >SUBMIT</Button>
+          </Paper>
       </Grid>
+    </form> 
   )
 }
+
 
 export default UserForm

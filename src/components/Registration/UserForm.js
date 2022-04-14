@@ -9,6 +9,7 @@ import FormLabel from '@material-ui/core/FormLabel';
 import Stack from '@mui/material/Stack';
 import Button from '@material-ui/core/Button';
 // import { Label } from '@material-ui/icons';
+import { useNavigate } from 'react-router-dom';
 
 function UserForm() {
     const [firstName, setFirstName] = useState("");
@@ -32,11 +33,12 @@ function UserForm() {
     const [attenderAge, setAttenderAge] = useState("");
     const [attenderContact, setAttenderContact] = useState("");
     const [others, setOthers] = useState("");
-  
+    const Navigate = useNavigate();
   
     const onSubmit = (event) =>{
       event.preventDefault();
       console.log(UserForm);
+      Navigate('/Dashboard');
     };
     const paperStyle = { padding: 20, height: 'full', width: 600, margin: '20px auto', borderRadius: '20px',flexDirection: 'column' }
     const btnStyle = { backgroundColor: '#023047', color: 'white', margin: '10px auto', width: 600 }

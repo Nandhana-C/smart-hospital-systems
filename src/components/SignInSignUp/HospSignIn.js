@@ -21,14 +21,14 @@ function HospSignIn() {
             </Grid>
             <TextField style={textStyle}label='Enter Username' placeholder='Username' fullWidth required />
             <TextField style={textStyle} label='Enter Password' placeholder='Password' type='Password' fullWidth required />
-            <Link to='/userform'>
+            <Link to='/Hospital'>
                 <Button variant='contained' type="submit" style={btnStyle} fullWidth>Sign In</Button>
             </Link>
             <Typography style={typoStyle}>
                 <Link to='/'>Forgot Password?</Link>
             </Typography>
             <Typography style={typoStyle}>Haven't Registered Yet?
-                <Link to='/'>Sign Up</Link>
+                <Link to='/HospRegister'>Sign Up</Link>
             </Typography>
         </Paper>
     </Grid>

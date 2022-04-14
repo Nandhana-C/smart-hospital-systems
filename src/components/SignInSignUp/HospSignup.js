@@ -33,9 +33,9 @@ function HospSignup() {
                 <FormControlLabel control={<Checkbox name='checked'/>} label="I accept to the terms and policies" fullWidth/>
             </FormGroup>
             <Typography style={typoStyle}>Aldready Registered?
-                <Link to='/'>Sign In</Link>
+                <Link to='/HospLogin'>Sign In</Link>
             </Typography>
-                <Link to='/'>
+                <Link to='/Hospital'>
                     <Button type="submit" variant="contained" style={btnStyle} fullWidth>Register</Button>
                 </Link>
                 </form>

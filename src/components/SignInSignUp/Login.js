@@ -21,14 +21,14 @@ function LogIn() {
                 </Grid>
                 <TextField style={textStyle}label='Enter Username' placeholder='Username' fullWidth required />
                 <TextField style={textStyle} label='Enter Password' placeholder='Password' type='Password' fullWidth required />
-                <Link to='/'>
+                <Link to='/Dashboard'>
                     <Button variant='contained' type="submit" style={btnStyle} fullWidth>Sign In</Button>
                 </Link>
                 <Typography style={typoStyle}>
                     <Link to='/'>Forgot Password?</Link>
                 </Typography>
                 <Typography style={typoStyle}>Don't have an account?
-                    <Link to='/'>Sign Up</Link>
+                    <Link to='/signup'>Sign Up</Link>
                 </Typography>
             </Paper>
         </Grid>

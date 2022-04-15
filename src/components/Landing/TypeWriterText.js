@@ -40,7 +40,7 @@ function TypeWriterText() {
     </Title>
     <SubTitle>lorembruh lorembruh lorembruh </SubTitle>
     <ButtonContainer>
-    <Button text="Bruh" link="#about" />
+    <Button text="Bruh" link="/signup" />
     </ButtonContainer>
     </>
   )

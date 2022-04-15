@@ -21,7 +21,7 @@ function About() {
           </SubTextLight>
           <ButtonContainer>
           <ThemeProvider theme={dark} >
-          <Button text = "JOIN NOW" link="#" />
+          <Button text = "JOIN NOW" link="/HospRegister" />
           </ThemeProvider>
           </ButtonContainer>
         </Box>

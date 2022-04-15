@@ -16,7 +16,7 @@ function PhnOtp() {
                     <h2>Verify Your Number</h2>
                 </Grid>
                 <TextField style={textStyle}label='UserOTP' placeholder='Enter OTP' fullWidth required />
-                <Link to='/dashboard'>
+                <Link to='/userform'>
                     <Button variant='contained' type="submit" style={btnStyle} fullWidth>Sign In</Button>
                 </Link>
             </Paper>

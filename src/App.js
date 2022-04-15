@@ -5,6 +5,7 @@ import LogIn from '../src/components/SignInSignUp/Login';
 import SignUp from '../src/components/SignInSignUp/Signup';
 import PhnOtp from '../src/components/SignInSignUp/PhnOtp';
 import UserForm from '../src/components/Registration/UserForm';
+import HospForm from './components/Registration/HospForm';
 import HospSignup from '../src/components/SignInSignUp/HospSignup';
 import HospSignIn from '../src/components/SignInSignUp/HospSignIn';
 import HospDash from '../src/components/Dashboard/HospDash';
@@ -32,6 +33,7 @@ function App() {
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/verify' element={<PhnOtp />}/>
         <Route path='/userform' element={<UserForm />}/>
+        <Route path='/Hospform' element={<HospForm />}/>
         <Route path='/HospRegister' element={<HospSignup />}/>
         <Route path='/HospLogin' element={<HospSignIn />}/>
         <Route path='/Hospital' element={<HospDash />}/>

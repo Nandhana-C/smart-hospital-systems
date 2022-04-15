@@ -1,14 +1,6 @@
 import React, {useState} from 'react';
-import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
-import TextField from '@material-ui/core/TextField';
-import RadioGroup from '@mui/material/RadioGroup';
-import Radio from '@mui/material/Radio';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import FormLabel from '@material-ui/core/FormLabel';
-import Stack from '@mui/material/Stack';
-import Button from '@material-ui/core/Button';
-// import { Label } from '@material-ui/icons';
+import {Grid, Paper, TextField, Button, FormControlLabel, FormLabel } from '@material-ui/core';
+import {RadioGroup, Radio, Stack } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 function UserForm() {
@@ -37,7 +29,7 @@ function UserForm() {
   
     const onSubmit = (event) =>{
       event.preventDefault();
-      console.log(UserForm);
+      console.log(firstName,lastName,emailAddress,mobileNumber,address,gender,dob,age,height,weight,maritalStatus,prevMed,ifAny,bloodGroup,allergies,ifanyl,currentMed,attenderName,attenderAge,attenderContact,others);
       Navigate('/Dashboard');
     };
     const paperStyle = { padding: 20, height: 'full', width: 600, margin: '20px auto', borderRadius: '20px',flexDirection: 'column' }

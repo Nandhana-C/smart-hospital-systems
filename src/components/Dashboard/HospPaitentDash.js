@@ -1,8 +1,15 @@
 import React from 'react'
+import { ThemeProvider } from 'styled-components';
+import {light} from '../../Styles/Themes';
+import HospPatientDashHead from './HospPatientDashHead';
 
 function HospPaitentDash() {
   return (
-    <div>HospPaitentDash</div>
+    <>
+    <ThemeProvider theme={light} >
+    <HospPatientDashHead/>
+    </ThemeProvider>
+    </>
   )
 }
 

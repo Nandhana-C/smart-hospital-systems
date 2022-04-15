@@ -9,7 +9,7 @@ import HospForm from './components/Registration/HospForm';
 import HospSignup from '../src/components/SignInSignUp/HospSignup';
 import HospSignIn from '../src/components/SignInSignUp/HospSignIn';
 import HospDash from '../src/components/Dashboard/HospDash';
-import PaitentDash from '../src/components/Dashboard/PaitentDash';
+// import PaitentDash from '../src/components/Dashboard/PaitentDash';
 import DocDash from '../src/components/Dashboard/DocDash';
 import HospPaitentDash from '../src/components/Dashboard/HospPaitentDash';
 import { Routes, Route } from "react-router-dom";
@@ -39,7 +39,7 @@ function App() {
         <Route path='/Hospital' element={<HospDash />}/>
         <Route path='/DoctorDash' element={<DocDash />}/>
         <Route path='/PaitentDash' element={<HospPaitentDash />}/>
-        <Route path='/Dashboard' element={<PaitentDash />}/>
+        {/* <Route path='/Dashboard' element={<PaitentDash />}/> */}
       </Routes>
     </div>
   );

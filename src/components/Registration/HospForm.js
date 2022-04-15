@@ -28,16 +28,16 @@ function HospForm() {
     const btnStyle = { backgroundColor: '#023047', color: 'white', margin: '20px auto', width: 600 }
     const headStyle = {fontFamily: 'Roboto Condensed', color:'#'}
     const Spl = [
-        { Name: 'ENT',grade:2},
-        { Name: 'Cardiology'},
-        { Name: 'Neurology'},
-        { Name: 'Renal'},
-        { Name: 'Gynecology'},
-        { Name: 'Orthopedics'},
-        { Name: 'Dermatology'},
-        { Name: 'Pediatrics'},
-        { Name: 'Ophthalmology'},
-        { Name: 'Pulmonology'}];
+        { title: 'ENT'},
+        { title: 'Cardiology'},
+        { title: 'Neurology'},
+        { title: 'Renal'},
+        { title: 'Gynecology'},
+        { title: 'Orthopedics'},
+        { title: 'Dermatology'},
+        { title: 'Pediatrics'},
+        { title: 'Ophthalmology'},
+        { title: 'Pulmonology'}];
     const Navigate = useNavigate();
     const onSubmit = (event) =>{
         event.preventDefault();

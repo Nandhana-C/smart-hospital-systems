@@ -11,6 +11,7 @@ function HospDashHome() {
     const btnStyle = {backgroundColor: '#FFB703', color:'white', margin:'20px 10px'}
     const textStyle = {margin:'5px'}
     const [docId, setDocId] = useState("");
+    const [patientId, setPatientId] = useState("");
     const Navigate = useNavigate();
     const docClick = () => {
       Navigate('/DoctorDash');
@@ -29,6 +30,7 @@ function HospDashHome() {
       },
     };
     const [modalIsOpen, setIsOpen] = useState(false);
+    const [modalIsOpen1, setIsOpen1] = useState(false);
 
     function openModal() {
       setIsOpen(true);
@@ -36,6 +38,13 @@ function HospDashHome() {
 
     function closeModal() {
       setIsOpen(false);
+    }
+    function openModal1() {
+      setIsOpen1(true);
+    }
+
+    function closeModal1() {
+      setIsOpen1(false);
     }
   return (
     <Section>
@@ -57,6 +66,23 @@ function HospDashHome() {
           </BtnWrap>
         </ModalBox>
       </Modal>
+      <Modal
+        isOpen={modalIsOpen1}
+        onRequestClose={closeModal1}
+        style={customStyles}
+        contentLabel="Patient Modal"
+      >
+        <ModalBox>
+          <Grid align='center'>
+              <h2>Enter Your Id</h2>
+          </Grid>
+          <TextField style={textStyle} label='Patient ID' placeholder='Enter Patient ID' fullWidth required onChange={(event)=>setPatientId(event.target.value)} />
+          <BtnWrap>
+            <Button variant='contained' type="submit" style={btnStyle} fullWidth onClick={PaitentClick}>Select</Button>
+            <Button variant='contained' type="submit" style={btnStyle} fullWidth onClick={closeModal1}>Close</Button>
+          </BtnWrap>
+        </ModalBox>
+      </Modal>
         <Box>
             <Paper onClick={openModal} elevation={10} style={paperStyle}>
               <ImgContainer>
@@ -68,7 +94,7 @@ function HospDashHome() {
             </Paper>
         </Box>
         <Box>
-            <Paper onClick={PaitentClick} elevation={10} style={paperStyle}>
+            <Paper onClick={openModal1} elevation={10} style={paperStyle}>
               <ImgContainer>
                 <img src={Paitent} alt='img' />
               </ImgContainer>

@@ -14,9 +14,11 @@ function HospDashHome() {
     const [patientId, setPatientId] = useState("");
     const Navigate = useNavigate();
     const docClick = () => {
+      console.log(docId);
       Navigate('/DoctorDash');
     } 
     const PaitentClick = () => {
+      console.log(patientId);
       Navigate('/PaitentDash');
     } 
     const customStyles = {

@@ -1,32 +1,28 @@
 import styled from 'styled-components'
 import React from 'react'
-import { Grid, Paper, Avatar,TextField, Button, Typography } from '@material-ui/core';
-import List from '@mui/material/List';
-import ListItem from '@mui/material/ListItem';
-import ListItemText from '@mui/material/ListItemText';
-import Divider from '@mui/material/Divider';
-import { borderRadius } from '@mui/system';
+import { Grid, Paper, Avatar,Typography } from '@material-ui/core';
+// import List from '@mui/material/List';
+// import ListItem from '@mui/material/ListItem';
+// import ListItemText from '@mui/material/ListItemText';
+// import Divider from '@mui/material/Divider';
+// import { borderRadius } from '@mui/system';
 
 function PatientDashHome() {
-  const paperStyle = { padding: 20, height: 475 , width: 450, margin: '10px auto', borderRadius: '10px', color:'black', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }
-  const paperStyle1 = { padding: 20, height: 475 , width: 450, margin: '10px auto', borderRadius: '10px', color:'black', flexDirection: 'column', justifyContent: 'center', alignItems: 'center'}
-  const avatarStyle = {backgroundColor: '#023047', height:'100px', width:'100px', margin:'10px'}
-  const divStyle = {marginLeft: '100px', marginRight:'100px', display: 'block', alignItems:'center',justifyContent:'center', padding:'10px', border: '1px solid grey', borderRadius: 25}
-  const headingStyle = {textAlign:'center', fontSize: 25, margin: '20px', padding: '5px'}
+  const paperStyle = { padding: 20, height: 480 , width: 450, margin: '10px auto', borderRadius: '10px', color:'black', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }
+  const paperStyle1 = { padding: 22, height: 100 , width: 300, margin: '10px auto', borderRadius: '10px', color:'black', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', transition: 'all 0.2s ease'}
+  const avatarStyle = {backgroundColor: '#023047', height:'50px', width:'50px', margin:'10px'}
+  const divStyle = {marginLeft: '55px', marginRight:'55px', display: 'block', alignItems:'center',justifyContent:'center', padding:'10px', border: '1px solid grey', borderRadius: 25}
+  const headingStyle = {textAlign:'center', fontSize: 20, margin: '20px', padding: '5px'}
   const typoStyle = {margin:'5px', padding:'2px'}
-  const style = {width: 400, maxWidth: 450, bgcolor: 'background.paper'}
-  const listItmStyle = {paddingTop:'15px', paddingBottom: '15px'}
+
   
   return (
     <>
     <Section>
       <Container>
       <Box>
-            <Paper elevation={10} style={paperStyle1}>
-              {/* <ImgContainer>
-                <img src={Doctor} alt='img' />
-              </ImgContainer> */}
-              <Grid align='center' style={{margin:'50px'}}>
+            <Paper elevation={10} style={paperStyle}>
+              <Grid align='center'>
                 <Avatar style={avatarStyle}></Avatar>
                 <h2 style={headingStyle}>PATIENT DETAILS</h2>
               </Grid>
@@ -34,37 +30,32 @@ function PatientDashHome() {
                 <Typography style={typoStyle} variant='h6'>PATIENT NAME: XYZ</Typography>
                 <Typography style={typoStyle} variant='h6'>AGE: 74</Typography>
                 <Typography style={typoStyle} variant='h6'>PATIENT ID: 0123</Typography>
+                <Typography style={typoStyle} variant='h6'>MOBILE NO: +91 1234567890</Typography>
+                <Typography style={typoStyle} variant='h6'>EMAIL: XYZ@HH.COM</Typography>
+                <Typography style={typoStyle} variant='h6'>BLOOD GROUP: F+</Typography>
+                <Typography style={typoStyle} variant='h6'>CURRENT MEDICATION: FENTANYL</Typography>
               </Grid>
             </Paper>
         </Box>
         <Box>
             <Paper elevation={10} style={paperStyle}>
-              {/* <ImgContainer>
-                <img src={Paitent} alt='img' />
-              </ImgContainer> */}
-              <Name>
-              <List sx={style} component="nav" aria-label="mailbox folders">
-      <ListItem button style={listItmStyle}>
-        <ListItemText primary="PREVIOUS APPOINTMENT" />
-      </ListItem>
-      <Divider />
-      <ListItem button style={listItmStyle}>
-        <ListItemText primary="NEXT APPOINTMENT" />
-      </ListItem>
-      <Divider />
-      <ListItem button divider style={listItmStyle}>
-        <ListItemText primary="CURRENT MEDICATION" />
-      </ListItem>
-      <ListItem button style={listItmStyle}>
-        <ListItemText primary="RECENT TEST REPORTS" />
-      </ListItem>
-      <Divider />
-      <ListItem button style={listItmStyle}>
-        <ListItemText primary="UPDATED MEDICATION" />
-      </ListItem>
-      <Divider light/>
-    </List>
-              </Name>
+              <Grid align='center' style={{alignItems:'center',justifyContent:'center'}}>
+                <Wrap>  
+                <Paper elevation={10} style={paperStyle1} >
+                  <Name>Appoinments</Name>
+                </Paper>
+                </Wrap>
+                <Wrap>
+                <Paper elevation={10} style={paperStyle1} >
+                  <Name>Medical Records</Name>
+                </Paper>
+                </Wrap>
+                <Wrap>
+                <Paper elevation={10} style={paperStyle1} >
+                  <Name>Chat with Doctor</Name>
+                </Paper>
+                </Wrap>
+              </Grid>
             </Paper>
         </Box>
       </Container>
@@ -95,20 +86,15 @@ const Box = styled.div`
   justify-content: center;
   align-items: center;
 `
-const ImgContainer = styled.div`
-    width: 100%;
-    img {
-      width: 100%;
-      height: 60%;
-    }
-`
 const Name = styled.div`
   font-size: 1.5rem;
   font-weight: 600;
-  padding: 20px;
-  margin-left:10px;
-  margin-top:15px;
-  margin-bottom:15px;
+  padding: 30px;
 `
-
+const Wrap = styled.div`
+  transition: all 0.2s ease;
+  &:hover{
+      transform: scale(1.1);
+  }
+`
 export default PatientDashHome

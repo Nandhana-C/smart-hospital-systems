@@ -13,6 +13,8 @@ import DocDash from '../src/components/Dashboard/DocDash';
 import HospPaitentDash from '../src/components/Dashboard/HospPaitentDash';
 import PatientDash from '../src/components/Dashboard/PatientDash';
 import { Routes, Route } from "react-router-dom";
+import Vitals from './components/Dashboard/Vitals/Vitals';
+import Diagnosis from './components/Dashboard/Diagnosis/Diagnosis';
 // import {auth} from './firebase';
 function App() {
 
@@ -39,6 +41,8 @@ function App() {
         <Route path='/Hospital' element={<HospDash />}/>
         <Route path='/DoctorDash' element={<DocDash />}/>
         <Route path='/PaitentDash' element={<HospPaitentDash />}/>
+        <Route path='/Vitals' element={<Vitals />}/>
+        <Route path='/Diagnosis' element={<Diagnosis />}/>
         <Route path='/Dashboard' element={<PatientDash />}/>
       </Routes>
     </div>

@@ -25,11 +25,4 @@ const NavBar = styled.nav`
   height: ${props => props.theme.navHeight};
   margin: 0 auto;
 `
-const Name = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.8rem;
-  font-weight: 900;
-`
 export default PatientDashHead

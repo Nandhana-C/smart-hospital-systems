@@ -8,25 +8,25 @@ function Faq() {
       <Title>Faq</Title>
       <Container>
         <Box>
-          <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+          <Accordion title="Where do I call for Information on HOSPER">
+            Call to our HOSPER Help Desk at 9962444054
           </Accordion>
-          <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+          <Accordion title="What happens once I registered?">
+            The HOSPER team does a full assessment of every patient and establishes a comprehensive list of medical issues and challenges. Then fixes the appointmet with the concerned specialist on the basis of the severity of the illness
           </Accordion>
-          <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+          <Accordion title="Will someone be able to access my informaion?">
+            No
           </Accordion>
         </Box>
         <Box>
-        <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+        <Accordion title="How secured is the patient data?">
+            All data is encrypted and the system is password protected
         </Accordion>
-        <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+        <Accordion title="Will it work on windows, android or ios devices">
+            Yes 
         </Accordion>
-        <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+        <Accordion title="Who will have access to my information?">
+            All information contained in your patient file is confidential and may not be divulged to anyone beyond your treating team without your consent. 
         </Accordion>
         </Box>
       </Container>

@@ -14,22 +14,22 @@ function TypeWriterText() {
             loop: true,
         }}
   onInit={(typewriter) => {
-    typewriter.typeString('<span class="text-1">Say</span>')
+    typewriter.typeString('<span class="text-1">APPOINMENTS</span>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<span class="text-2">Somthing</span>')
+    .typeString('<span class="text-2">PRE DIAGNOSIS</span>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<span class="text-3">to add</span>')
+    .typeString('<span class="text-3">MEDICAL RECORDS</span>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<span class="text-4">here</span>')
+    .typeString('<span class="text-4">CARING</span>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<span class="text-5">Please</span>')
+    .typeString('<span class="text-5">HEALING</span>')
     .pauseFor(2000)
     .deleteAll()
-    .typeString('<span class="text-6">Bruh</span>')
+    .typeString('<span class="text-6">LEADING</span>')
     .pauseFor(2000)
     .deleteAll()
     .start()
@@ -38,9 +38,9 @@ function TypeWriterText() {
   }}
 />
     </Title>
-    <SubTitle>lorembruh lorembruh lorembruh </SubTitle>
+    <SubTitle>THE HOSPITAL OF THE FUTURE, TODAY </SubTitle>
     <ButtonContainer>
-    <Button text="Bruh" link="/signup" />
+    <Button text="Login" link="/signup" />
     </ButtonContainer>
     </>
   )

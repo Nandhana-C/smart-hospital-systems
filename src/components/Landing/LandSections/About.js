@@ -11,7 +11,7 @@ function About() {
         <Box> <Carousel /> </Box>
         <Box>
           <Title>
-            Join Us For The New Lorem
+            Join Us To Experience The New Era of Hospital
           </Title>
           <SubText>
             lorem ispum wetd hjhgdtcg vyhg tghcvncy cyhnbcytchv mvcfdyhgbv hjbdf\sj hsgbkjsfgkfv kjdfbvdb.

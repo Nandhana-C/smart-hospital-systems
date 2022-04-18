@@ -62,10 +62,10 @@ function Services() {
         </SvgContainer>
         <Items>
           <Item>&nbsp;</Item>
-          <ServicesItem addToRefs={addToRefs} title="Service 1" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
-          <ServicesItem addToRefs={addToRefs} title="Service 2" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
-          <ServicesItem addToRefs={addToRefs} title="Service 3" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
-          <ServicesItem addToRefs={addToRefs} title="Service 4" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
+          <ServicesItem addToRefs={addToRefs} title="Advanced Prediction" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
+          <ServicesItem addToRefs={addToRefs} title="Pre-Diagnosis" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
+          <ServicesItem addToRefs={addToRefs} title="Medical Reports" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
+          <ServicesItem addToRefs={addToRefs} title="Serv" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
           <ServicesItem addToRefs={addToRefs} title="Service 5" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
         </Items>
       </Container>

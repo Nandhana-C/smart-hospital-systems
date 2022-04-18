@@ -15,9 +15,11 @@ import PatientDash from '../src/components/Dashboard/PatientDash';
 import { Routes, Route } from "react-router-dom";
 import Vitals from './components/Dashboard/Vitals/Vitals';
 import Diagnosis from './components/Dashboard/Diagnosis/Diagnosis';
-// import {auth} from './firebase';
+import {auth} from './firebase';
+import {useAuthState} from 'react-firebase-hooks/auth';
 function App() {
 
+  const [user] = useAuthState(auth);
   // const [user, setUser] = useState(JSON.parse(localStorage.getItem('user')));
 
   // const signOut = () =>{
@@ -28,9 +30,15 @@ function App() {
   // }
   return (
     <div className="App">
+      {
+        user ?
+        <PatientDash />
+        :
+        <Landing/>
+      }
     
       <Routes>
-        <Route path='/' element={<Landing />}/>
+        {/* <Route path='/' element={<Landing />}/> */}
         <Route path='/login' element={<LogIn />}/>
         <Route path='/signup' element={<SignUp />}/>
         <Route path='/verify' element={<PhnOtp />}/>

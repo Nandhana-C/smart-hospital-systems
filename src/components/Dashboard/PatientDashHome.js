@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import React from 'react'
 import { Grid, Paper, Avatar,Typography } from '@material-ui/core';
+import {auth} from '../../firebase';
 // import List from '@mui/material/List';
 // import ListItem from '@mui/material/ListItem';
 // import ListItemText from '@mui/material/ListItemText';
@@ -8,6 +9,9 @@ import { Grid, Paper, Avatar,Typography } from '@material-ui/core';
 // import { borderRadius } from '@mui/system';
 
 function PatientDashHome() {
+  const logout = () => {
+    auth.signOut();
+  }
   const paperStyle = { padding: 20, height: 480 , width: 450, margin: '10px auto', borderRadius: '10px', color:'black', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }
   const paperStyle1 = { padding: 22, height: 100 , width: 300, margin: '10px auto', borderRadius: '10px', color:'black', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', transition: 'all 0.2s ease'}
   const avatarStyle = {backgroundColor: '#023047', height:'50px', width:'50px', margin:'10px'}
@@ -30,7 +34,7 @@ function PatientDashHome() {
                 <Typography style={typoStyle} variant='h6'>PATIENT NAME: XYZ</Typography>
                 <Typography style={typoStyle} variant='h6'>AGE: 74</Typography>
                 <Typography style={typoStyle} variant='h6'>PATIENT ID: 0123</Typography>
-                <Typography style={typoStyle} variant='h6'>MOBILE NO: +91 1234567890</Typography>
+                <Typography style={typoStyle} variant='h6'>MOBILE NO: {auth.currentUser.phoneNumber}</Typography>
                 <Typography style={typoStyle} variant='h6'>EMAIL: XYZ@HH.COM</Typography>
                 <Typography style={typoStyle} variant='h6'>BLOOD GROUP: F+</Typography>
                 <Typography style={typoStyle} variant='h6'>CURRENT MEDICATION: FENTANYL</Typography>
@@ -51,7 +55,7 @@ function PatientDashHome() {
                 </Paper>
                 </Wrap>
                 <Wrap>
-                <Paper elevation={10} style={paperStyle1} >
+                <Paper onClick={logout} elevation={10} style={paperStyle1} >
                   <Name>Chat with Doctor</Name>
                 </Paper>
                 </Wrap>

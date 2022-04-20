@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import Carousel from '../Carousel';
+// import Carousel from '../Carousel';
 import Button from '../Button';
 import {dark} from '../../../Styles/Themes';
 
@@ -8,7 +8,9 @@ function About() {
   return (
     <Section>
       <Container>
-        <Box> <Carousel /> </Box>
+        <Box>
+           {/* <Carousel />  */}
+          </Box>
         <Box>
           <Title>
             Join Us For The New Lorem

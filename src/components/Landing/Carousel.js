@@ -6,6 +6,7 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay, EffectCards } from "swiper";
+// SwiperCore.use([Pagination, EffectCards]);
 import img1 from '../../assets/home.svg';
 
 

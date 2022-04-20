@@ -4,12 +4,12 @@ import {light} from '../../Styles/Themes';
 import PatientDashHead from './PatientDashHead';
 import PatientDashHome from './PatientDashHome';
 
-function PatientDash() {
+function PatientDash(props) {
   return (
     <>
     <ThemeProvider theme={light}>
     <PatientDashHead/>
-    <PatientDashHome/>
+    <PatientDashHome asset = {props}/>
     </ThemeProvider>
     </>
   )

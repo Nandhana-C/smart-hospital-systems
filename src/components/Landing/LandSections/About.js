@@ -13,11 +13,8 @@ function About() {
           <Title>
             Join Us To Experience The New Era of Hospital
           </Title>
-          <SubText>
-            lorem ispum wetd hjhgdtcg vyhg tghcvncy cyhnbcytchv mvcfdyhgbv hjbdf\sj hsgbkjsfgkfv kjdfbvdb.
-          </SubText>
           <SubTextLight>
-            djbkjdfnhdb hkdbkfjmd vjhvbkd mnnfdhfn bmfiedf bc djfb bedmfn bdjhfb b jkdtbjbn dthb djgb dhjgev vdnvhgdfnvejv.
+            Expert Medical Care Made Possible
           </SubTextLight>
           <ButtonContainer>
           <ThemeProvider theme={dark} >

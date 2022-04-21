@@ -10,7 +10,7 @@ function HospPaitentDashBar() {
     <Section>
       <NavBar>
         <Name>
-            Paitent ID : 696969
+            Paitent ID : 22222
         </Name>
         <Name>
             Time : 

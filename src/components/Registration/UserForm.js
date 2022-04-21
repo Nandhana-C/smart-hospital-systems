@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Grid, Paper, TextField, Button, FormControlLabel, FormLabel } from '@material-ui/core';
 import {RadioGroup, Radio, Stack } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 function UserForm() {
     const [firstName, setFirstName] = useState("");
@@ -232,12 +233,14 @@ function UserForm() {
               fullWidth
               required
             />
-            <Button
-              color="secondary"
-              variant="contained"
-              onSubmit={onSubmit}
-              style = {btnStyle}
-            >SUBMIT</Button>
+            <Link to='/Dashboard'>
+              <Button
+                color="secondary"
+                variant="contained"
+                onSubmit={onSubmit}
+                style = {btnStyle}
+              >SUBMIT</Button>
+            </Link>
           </Paper>
       </Grid>
     </form> 

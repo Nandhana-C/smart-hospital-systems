@@ -14,7 +14,7 @@ function TypeWriterText() {
             loop: true,
         }}
   onInit={(typewriter) => {
-    typewriter.typeString('<span class="text-1">APPOINMENTS</span>')
+    typewriter.typeString('<span class="text-1">APPOINTMENTS</span>')
     .pauseFor(2000)
     .deleteAll()
     .typeString('<span class="text-2">PRE DIAGNOSIS</span>')
@@ -38,7 +38,7 @@ function TypeWriterText() {
   }}
 />
     </Title>
-    <SubTitle>THE HOSPITAL OF THE FUTURE, TODAY </SubTitle>
+    <SubTitle>The Hospital of the Future, Today!!! </SubTitle>
     <ButtonContainer>
     <Button text="Login" link="/signup" />
     </ButtonContainer>

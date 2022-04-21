@@ -28,7 +28,7 @@ function LogIn() {
                     <Link to='/'>Forgot Password?</Link>
                 </Typography>
                 <Typography style={typoStyle}>Don't have an account?
-                    <Link to='/signup'>Sign Up</Link>
+                    <Link to='/signup'><b><u>SIGN UP</u></b></Link>
                 </Typography>
             </Paper>
         </Grid>

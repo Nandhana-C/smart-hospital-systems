@@ -7,9 +7,12 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import { Link } from "react-router-dom";
-import { firebase, auth } from '../../firebase';
+import firebase from 'firebase';
+import { auth } from '../../firebase'
 import Modal from 'react-modal';
 import { useNavigate } from 'react-router-dom';
+
+// console.log(auth)
 
 function SignUp() {
     const [name, setName] = useState("");
@@ -43,40 +46,55 @@ function SignUp() {
     //     setIsOpen(true);
     //   }
   
-      function closeModal() {
-        setIsOpen(false);
-      }
-      const SignIn = (event) =>{
-        event.preventDefault();
-        if (phoneNo === "" || phoneNo.length < 10) return;
-  
-        let verify = new firebase.auth.RecaptchaVerifier('recaptcha-container');
-        auth.signInWithPhoneNumber(phoneNo, verify).then((result) => {
-            setFinal(result);
-            setIsOpen(true);
-            alert("code sent")
-            // setshow(true);
-        })
-            .catch((err) => {
-                alert(err);
-                window.location.reload()
-            });
-        
-      };
-      const ValidateOtp = () => {
-        if (otp === null || final === null)
-            return;
-        final.confirm(otp).then((result) => {
-            Navigate('/Dashboard');
-            console.log(name,email,passwd,rePasswd);
-        }).catch((err) => {
-            alert("Wrong code");
-        })
+    //   function closeModal() {
+    //     setIsOpen(false);
+    //   }
+
+      const SignIn = () => {
+        // event.preventDefault();
+        // setIsOpen(true);
+        const number = '+918189884612';
+        Window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+        firebase.auth().signInWithPhoneNumber(number, Window.recaptchaVerifier)
+        .then(function (confirmationResult) {
+            console.log(confirmationResult)
+            // return confirmationResult.confirm(testVerificationCode)
+        }).catch(function (error) {
+            console.log(error)
+            
+    });
     }
+    //   const SignIn = (event) =>{
+    //     event.preventDefault();
+    //     setIsOpen(true);
+    //     if (phoneNo === "" || phoneNo.length < 10) return;
+  
+    //     let verify = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+    //     auth.signInWithPhoneNumber(phoneNo, verify).then((result) => {
+    //         setFinal(result);
+    //         alert("code sent")
+    //         // setshow(true);
+    //     })
+    //         .catch((err) => {
+    //             alert(err);
+    //             window.location.reload()
+    //         });
+        
+    //   };
+    //   const ValidateOtp = () => {
+    //     if (otp === null || final === null)
+    //         return;
+    //     final.confirm(otp).then((result) => {
+    //         Navigate('/Dashboard');
+    //         console.log(name,email,passwd,rePasswd);
+    //     }).catch((err) => {
+    //         alert("Wrong code");
+    //     })
+    // }
   
    return (
         <Grid>
-            <Modal
+            {/* <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 style={customStyles}
@@ -87,14 +105,13 @@ function SignUp() {
                     <Avatar style={avatarStyle}><PermPhoneMsgIcon /></Avatar>
                     <h2>Verify Your Number</h2>
                 </Grid>
-                <div id="recaptcha-container"></div>
                 <TextField style={textStyle}label='UserOTP' placeholder='Enter OTP' fullWidth onChange={(event)=>setOtp(event.target.value)} required />
                 <BtnWrap>
                     <Button variant='contained' type="submit" style={btnStyle} fullWidth onClick={ValidateOtp}>Verify</Button>
-                    <Button variant='contained' type="submit" style={btnStyle} fullWidth onClick={closeModal}>Close</Button>
+                    <Button variant='contained' type="submit" style={btnStyle} fullWidth >Close</Button>
                 </BtnWrap>
                 </ModalBox>
-            </Modal>
+            </Modal> */}
             <Paper elevation={20} style={paperStyle}>
                 <Grid align='center'>
                     <Avatar style={avatarStyle}><PersonAddIcon /></Avatar>
@@ -109,10 +126,13 @@ function SignUp() {
                         <FormGroup style={formStyle}>
                     <FormControlLabel control={<Checkbox name='checked'/>} label="I accept to the terms and policies" fullWidth/>
                 </FormGroup>
-                <Typography style={typoStyle}>Aldready have an account?
-                    <Link to='/login'>Sign In</Link>
+                <Typography style={typoStyle}>Already have an account?
+                    <Link to='/login'><b><u>SIGN IN</u></b></Link>
                 </Typography>
-                        <Button type="submit" variant="contained" style={btnStyle} onClick={SignIn} fullWidth>Sign Up</Button>
+                        <Link to='/userform'>
+                            <Button type="submit" variant="contained" style={btnStyle}  fullWidth>Sign Up</Button>
+                            <div id="recaptcha-container"/>
+                        </Link>
                     </form>
                 </Grid>
             </Paper>

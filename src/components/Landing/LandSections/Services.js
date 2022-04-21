@@ -62,11 +62,11 @@ function Services() {
         </SvgContainer>
         <Items>
           <Item>&nbsp;</Item>
-          <ServicesItem addToRefs={addToRefs} title="Advanced Prediction" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
-          <ServicesItem addToRefs={addToRefs} title="Pre-Diagnosis" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
-          <ServicesItem addToRefs={addToRefs} title="Medical Reports" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
-          <ServicesItem addToRefs={addToRefs} title="Serv" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
-          <ServicesItem addToRefs={addToRefs} title="Service 5" subtext="Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit. At Repellat Placeat, Adipisicing Elit. At Repellat Placeat." />
+          <ServicesItem addToRefs={addToRefs} title="Advanced Prediction" subtext="Predicts the severity of the disease of the patient." />
+          <ServicesItem addToRefs={addToRefs} title="Administration" subtext="Manages the patient's medical history through sophisticated Database and Cloud services." />
+          <ServicesItem addToRefs={addToRefs} title="Appointments" subtext="Appointments are provided based on the severity of the illness." />
+          <ServicesItem addToRefs={addToRefs} title="Pre-Diagnosis" subtext="The major vitals such as heart rate,bpm, etc,. are recorded." />
+          <ServicesItem addToRefs={addToRefs} title="Medical Reports" subtext="Stores all the medical reports and documents of a patient on the server to access easily." />
         </Items>
       </Container>
     </Section>

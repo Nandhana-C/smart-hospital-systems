@@ -9,24 +9,24 @@ function Faq() {
       <Container>
         <Box>
           <Accordion title="Where do I call for Information on HOSPER">
-            Call to our HOSPER Help Desk at 9962444054
+            CALL TO OUR HOSPER HELP DESK AT 9962444054.
           </Accordion>
           <Accordion title="What happens once I registered?">
-            The HOSPER team does a full assessment of every patient and establishes a comprehensive list of medical issues and challenges. Then fixes the appointmet with the concerned specialist on the basis of the severity of the illness
+            THE HOSPER TEAM DOES A FULL ASSESSMENT OF EVERY PATIENT AND ESTABLISHES A COMPREHENSIVE LIST OF MEDICAL ISSUES AND CHALLENGES. THEN FIXES THE APPOINTMENT WITH THE CONCERNED SPECIALIST ON THE BASIS OF THE SEVERITY OF THE ILLNESS.
           </Accordion>
-          <Accordion title="Will someone be able to access my informaion?">
-            No
+          <Accordion title="Will someone be able to access my information?">
+            NO
           </Accordion>
         </Box>
         <Box>
         <Accordion title="How secured is the patient data?">
-            All data is encrypted and the system is password protected
+            ALL DATA IS ENCRYPTED AND THE SYSTEM IS PASSWORD PROTECTED
         </Accordion>
         <Accordion title="Will it work on windows, android or ios devices">
-            Yes 
+            YES
         </Accordion>
-        <Accordion title="Who will have access to my information?">
-            All information contained in your patient file is confidential and may not be divulged to anyone beyond your treating team without your consent. 
+        <Accordion title="Who will have access to my information?"> 
+            ALL INFORMATION CONTAINED IN YOUR PATIENT FILE IS CONFIDENTIAL AND MAY NOT BE DIVULGED TO ANYONE BEYOND YOUR TREATING TEAM WITHOUT YOUR CONSENT.
         </Accordion>
         </Box>
       </Container>

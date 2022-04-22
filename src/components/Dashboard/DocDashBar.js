@@ -10,7 +10,7 @@ function DocDashBar() {
     <Section>
       <NavBar>
         <Name>
-            Doctor ID : 696969
+          Doctor ID : 262626
         </Name>
         <Name>
             Time : 

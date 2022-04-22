@@ -14,7 +14,7 @@ function Navigation() {
           <MenuItem>Services</MenuItem>
           <MenuItem>Faq</MenuItem>
         </Menu>
-        <Button text="Start Now" link="/login" />
+        <Button text="Login" link="/login" />
       </NavBar>
     </Section>
   )

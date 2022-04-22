@@ -12,19 +12,19 @@ function DocDashHome() {
             </AppoinmentHead>
             <AppoinmentList>
                 <PaitentName>
-                    <h2>Sample</h2>
+                    <h2>Patient 1</h2>
                     <Icons>
                         <DoubleArrowIcon/>
                     </Icons>
                 </PaitentName>
                 <PaitentName>
-                    <h2>Sample</h2>
+                    <h2>Patient 2</h2>
                     <Icons>
                         <DoubleArrowIcon/>
                     </Icons>
                 </PaitentName>
                 <PaitentName>
-                    <h2>Sample</h2>
+                    <h2>XYZ</h2>
                     <Icons>
                         <DoubleArrowIcon/>
                     </Icons>
@@ -38,17 +38,17 @@ function DocDashHome() {
             <DetailsList>
                 <PaitentDetail>
                     <Filelink>
-                        <h2>ggg</h2>
+                        <h2>Vitals.pdf</h2>
                     </Filelink>
                 </PaitentDetail>
                 <PaitentDetail>
                     <Filelink>
-                        <h2>ggg</h2>
+                        <h2>Record.pdf</h2>
                     </Filelink>
                 </PaitentDetail>
                 <PaitentDetail>
                     <Filelink>
-                        <h2>ggg</h2>
+                        <h2>Proforma.pdf</h2>
                     </Filelink>
                 </PaitentDetail>
             </DetailsList>
@@ -73,7 +73,7 @@ const Wrap = styled.div`
     width: 85%;
     min-height: 80vh;
     margin: 0 auto;
-    background-color: lightblue;
+    /* background-color: lightblue; */
     display:flex;
     align-items:center;
     justify-content:space-around;
@@ -130,7 +130,7 @@ const  AppoinmentList = styled.div`
     padding:0px 10px;
     overflow-y: scroll;
     border-radius: 20px;
-    background-color: blue;
+    /* background-color: blue; */
     box-shadow: 1px 1px 30px 4px rgba(0,0,0,0.2);
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -220,7 +220,7 @@ const DetailsList = styled.div`
     height:75vh;
     overflow-y: scroll;
     border-radius:20px;
-    background-color:blue;
+    /* background-color:blue; */
     box-shadow: 1px 1px 30px 4px rgba(0,0,0,0.2);
     -ms-overflow-style: none;
     padding:0px 10px;

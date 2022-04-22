@@ -9,7 +9,7 @@ function DocDashHead() {
       <NavBar>
         <Logo />
         <Name>
-            Dr.69
+            Dr.ABC
         </Name>
         <Button text="Logout" link="/Hospital" />
       </NavBar>

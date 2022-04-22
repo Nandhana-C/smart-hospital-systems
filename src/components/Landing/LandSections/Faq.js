@@ -8,25 +8,25 @@ function Faq() {
       <Title>Faq</Title>
       <Container>
         <Box>
-          <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+          <Accordion title="Where do I call for Information on HOSPER">
+            CALL TO OUR HOSPER HELP DESK AT 9962444054.
           </Accordion>
-          <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+          <Accordion title="What happens once I registered?">
+            THE HOSPER TEAM DOES A FULL ASSESSMENT OF EVERY PATIENT AND ESTABLISHES A COMPREHENSIVE LIST OF MEDICAL ISSUES AND CHALLENGES. THEN FIXES THE APPOINTMENT WITH THE CONCERNED SPECIALIST ON THE BASIS OF THE SEVERITY OF THE ILLNESS.
           </Accordion>
-          <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+          <Accordion title="Will someone be able to access my information?">
+            NO
           </Accordion>
         </Box>
         <Box>
-        <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+        <Accordion title="How secured is the patient data?">
+            ALL DATA IS ENCRYPTED AND THE SYSTEM IS PASSWORD PROTECTED
         </Accordion>
-        <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+        <Accordion title="Will it work on windows, android or ios devices">
+            YES
         </Accordion>
-        <Accordion title="This is a question answer is below">
-            lorem bullshit loremchjsjbv  hsbv  jhbv  hj v dbvbv jsbdv  f kbfbv dx 
+        <Accordion title="Who will have access to my information?"> 
+            ALL INFORMATION CONTAINED IN YOUR PATIENT FILE IS CONFIDENTIAL AND MAY NOT BE DIVULGED TO ANYONE BEYOND YOUR TREATING TEAM WITHOUT YOUR CONSENT.
         </Accordion>
         </Box>
       </Container>

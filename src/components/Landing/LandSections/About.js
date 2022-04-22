@@ -1,6 +1,6 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-// import Carousel from '../Carousel';
+import Carousel from '../Carousel';
 import Button from '../Button';
 import {dark} from '../../../Styles/Themes';
 
@@ -8,18 +8,13 @@ function About() {
   return (
     <Section>
       <Container>
-        <Box>
-           {/* <Carousel />  */}
-          </Box>
+        <Box> <Carousel /> </Box>
         <Box>
           <Title>
-            Join Us For The New Lorem
+            Join Us To Experience The New Era of Hospital
           </Title>
-          <SubText>
-            lorem ispum wetd hjhgdtcg vyhg tghcvncy cyhnbcytchv mvcfdyhgbv hjbdf\sj hsgbkjsfgkfv kjdfbvdb.
-          </SubText>
           <SubTextLight>
-            djbkjdfnhdb hkdbkfjmd vjhvbkd mnnfdhfn bmfiedf bc djfb bedmfn bdjhfb b jkdtbjbn dthb djgb dhjgev vdnvhgdfnvejv.
+            Expert Medical Care Made Possible
           </SubTextLight>
           <ButtonContainer>
           <ThemeProvider theme={dark} >
@@ -66,14 +61,14 @@ const Title = styled.h2`
   align-self:flex-start;
   margin: 0 auto;
 `
-const SubText = styled.p`
-  font-size: ${props=> props.theme.fontmd};
-  width: 80%;
-  color: ${props => props.theme.body};
-  align-self:flex-start;
-  margin: 1rem auto;
-  font-weight: 400;
-`
+// const SubText = styled.p`
+//   font-size: ${props=> props.theme.fontmd};
+//   width: 80%;
+//   color: ${props => props.theme.body};
+//   align-self:flex-start;
+//   margin: 1rem auto;
+//   font-weight: 400;
+// `
 const SubTextLight = styled.p`
   font-size: ${props=> props.theme.fontlg};
   width: 80%;

@@ -5,7 +5,7 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
 // import PermPhoneMsgIcon from '@mui/icons-material/PermPhoneMsg';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
+// import Checkbox from '@mui/material/Checkbox';
 import { Link } from "react-router-dom";
 // import { firebase, auth } from '../../firebase';
 import {auth, provider,db, storage} from '../../firebase'
@@ -43,8 +43,8 @@ function SignUp(props) {
     const [name, setName] = useState("");
     const [phoneNo, setPhoneNo] = useState("");
     const [email, setEmail] = useState("");
-    const [passwd, setPasswd] = useState("");
-    const [rePasswd, setRePasswd] = useState("");
+    // const [passwd, setPasswd] = useState("");
+    // const [rePasswd, setRePasswd] = useState("");
     // const [otp, setOtp] = useState('');
     // const [show, setshow] = useState(false);
     // const [final, setFinal] = useState('');
@@ -101,7 +101,7 @@ function SignUp(props) {
     //         alert("Wrong code");
     //     })
     // }
-    console.log(name,email,passwd,rePasswd,phoneNo);
+    console.log(name,email,phoneNo);
   
    return (
         <Grid>
@@ -133,10 +133,10 @@ function SignUp(props) {
                         <TextField fullWidth label='Name' placeholder='Enter Your Name' style={textStyle} onChange={(event)=>setName(event.target.value)} required/>
                         <TextField fullWidth label='Phone Number' placeholder='Enter Your Phone Number' style={textStyle} onChange={(event)=>setPhoneNo(event.target.value)} required/>
                         <TextField fullWidth label='Email' placeholder='Enter Your Email Id' style={textStyle} onChange={(event)=>setEmail(event.target.value)} required/>
-                        <TextField fullWidth label='Password' placeholder='Enter Your Password' style={textStyle} onChange={(event)=>setPasswd(event.target.value)} required/>
-                        <TextField fullWidth label='Confirm Password' placeholder='Re-Enter Your Password' style={textStyle} onChange={(event)=>setRePasswd(event.target.value)} required/>
+                        {/* <TextField fullWidth label='Password' placeholder='Enter Your Password' style={textStyle} onChange={(event)=>setPasswd(event.target.value)} required/> */}
+                        {/* <TextField fullWidth label='Confirm Password' placeholder='Re-Enter Your Password' style={textStyle} onChange={(event)=>setRePasswd(event.target.value)} required/> */}
                         <FormGroup style={formStyle}>
-                    <FormControlLabel control={<Checkbox name='checked'/>} label="I accept to the terms and policies" fullWidth/>
+                    <FormControlLabel label="By clicking on S accept to the terms and policies" fullWidth/>
                 </FormGroup>
                 <Typography style={typoStyle}>Aldready have an account?
                     <Link to='/login'>Sign In</Link>

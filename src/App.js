@@ -39,15 +39,15 @@ function App() {
   // }
   return (
     <div className="App">
-      {
+      {/* {
         user ?
         <PatientDash signOut={signOut} user={user} />
         :
         <SignUp setUser={setUser}/>
-      }
+      } */}
     
       <Routes>
-        {/* <Route path='/' element={<Landing />}/> */}
+        <Route path='/' element={<Landing />}/>
         <Route path='/login' element={<LogIn />}/>
         <Route path='/signup' element={<SignUp setUser={setUser}/>}/>
         <Route path='/verify' element={<PhnOtp />}/>
@@ -60,7 +60,7 @@ function App() {
         <Route path='/PaitentDash' element={<HospPaitentDash />}/>
         <Route path='/Vitals' element={<Vitals />}/>
         <Route path='/Diagnosis' element={<Diagnosis />}/>
-        <Route path='/Dashboard' element={<PatientDash />}/>
+        <Route path='/Dashboard' element={<PatientDash signOut={signOut} user={user}/>}/>
       </Routes>
     </div>
   );
